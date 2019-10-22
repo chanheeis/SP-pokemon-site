@@ -1,0 +1,34 @@
+#poke-search-bar{
+    width:max-content;
+    margin:0px auto;
+    padding:10px;
+    padding-bottom:15px;
+    background-color:#0e4258;
+}
+
+#poke-search-bar input[type=text]{
+    width:250px;
+    border-radius: 10px;
+    border:0px solid;
+    text-align: center;
+}
+
+#poke-search-bar input[type=text]:focus{
+    outline: none;
+}
+
+#poke-search-bar p{
+    text-align: center;
+    color:white;
+    font-weight: bold;
+}
+
+#poke-search-bar input[type=submit]{
+    width:20px;height:20px;
+    background: url("../image/search.png") no-repeat;background-size: 100%;
+    border:none;
+    cursor:pointer;
+    margin-left:5px;
+    position: relative;
+    bottom: -3px;
+}

@@ -1,0 +1,39 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#root{
+    margin:0 auto;
+    margin-top:20px;
+    margin-bottom:50px;
+    width:1310px;
+    overflow: hidden;
+}
+
+#content{
+    width:975px;
+    box-sizing: border-box;
+    display: block;
+    float:left;
+}
+
+#sideNav{
+    margin-left:30px;
+    display: block;
+    width:300px;
+    float:left;
+}
+
+#header{
+    background-color: #0E4258;
+    margin-bottom:25px;
+}
+
+#header h1{
+    height: 70px;
+    line-height: 70px;
+    color:white;
+    text-align: center;
+}

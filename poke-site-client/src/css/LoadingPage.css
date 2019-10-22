@@ -1,0 +1,16 @@
+#loading-page{
+    width:100%;
+    float:left;
+    height:1200px;
+}
+
+#loading-page img{
+    width:200px;
+    height:200px;
+    display:block;
+    margin:50px auto;
+}
+
+#loading-page h1{
+    margin: 10px auto;
+}

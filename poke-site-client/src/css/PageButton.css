@@ -1,0 +1,31 @@
+#previous-button{
+    position: relative;bottom:-4px;
+    width:20px;height:20px;
+    background: url("../image/left-arrow.png") no-repeat;background-size: 100%;
+    border:none;
+    cursor:pointer;
+}
+
+#next-button{
+    position: relative;bottom:-4px;
+    width:20px;height:20px;
+    background: url("../image/right-arrow.png") no-repeat;background-size: 100%;
+    border:none;
+    cursor:pointer;
+}
+
+.page-button{
+    cursor:pointer;
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.page-button-selected {
+    cursor:pointer;
+    color:#22a5dd;
+    font-weight: bold;
+    margin-right:3px;
+    margin-left: 3px;
+    display: inline-block;
+}

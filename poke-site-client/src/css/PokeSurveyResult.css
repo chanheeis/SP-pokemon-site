@@ -1,0 +1,38 @@
+#result-title{
+    text-align: center;
+    height:50px;
+    line-height: 50px;
+    background-color: #0e4258;
+    color:white;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+.result-info-title{
+    font-weight: bold;
+    color:#0e4258;
+    margin-right:10px;
+}
+#poke-survey-result p{
+    margin-left:20px;
+}
+#poke-survey-result p:first-child{
+    margin-left:0px;
+}
+#poke-survey-result img{
+    margin:0 auto;
+    display: block;
+    width:200px;
+    height:200px;
+}
+#poke-survey-result button{
+    display: block;
+    margin: 0 auto;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    border:0px solid;
+    background-color:#0e4258;
+    padding:5px;
+    cursor: pointer;
+    margin-top:20px;
+}

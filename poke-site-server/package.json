@@ -1,0 +1,30 @@
+{
+  "name": "poke-site-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon web.js",
+    "mocha": "node_modules/.bin/mocha",
+    "client": "cd .. && cd poke-site-client && npm start",
+    "dev": "concurrently --kill-others \"npm run client\" \"npm start\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "mocha": "^6.2.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "node-fetch": "^2.6.0",
+    "serve-favicon": "^2.5.0"
+  }
+}

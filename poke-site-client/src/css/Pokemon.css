@@ -1,0 +1,37 @@
+.pokemon{
+    width:230px;
+    display: inline-block;
+    float:left;
+    margin-right:10px;
+    margin-bottom:10px;
+    border:3px solid #cccccc;
+}
+
+.pokemon:nth-child(4n){
+    margin-right:0px;
+}
+
+.pokemon img{
+    width:150px;
+    height:150px;
+    margin:0 auto;
+    display: block;
+}
+
+.pokemon p{
+    display: block;
+    padding-left:30px;
+    padding-bottom: 5px;
+}
+
+.pokemon #pokemon-id{
+    padding: 5px;
+    font-weight:bolder;
+}
+
+.poke-title{
+    font-weight: bold;
+    color:#0e4258;
+    margin-right:10px;
+}
+

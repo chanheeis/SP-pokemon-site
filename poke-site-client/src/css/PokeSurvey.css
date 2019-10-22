@@ -1,0 +1,48 @@
+#poke-survey-wrapper{
+    display:block;
+    width:300px;
+}
+
+#survey-title{
+    text-align: center;
+    height:50px;
+    line-height: 50px;
+    background-color: #0e4258;
+    color:white;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+
+.survey-wrapper{
+    margin-bottom:5px;
+}
+
+.survey-wrapper span,input{
+    margin-right:5px;
+}
+
+.survey-wrapper .yes{
+    color:#0099ff;
+    font-weight: bold;
+    margin-left:10px;
+}
+
+.survey-wrapper .no{
+    color:#ff5c33;
+    font-weight: bold;
+}
+
+#survey-submit-wrapper{
+    width:max-content;
+    margin:0 auto;
+}
+
+#survey-submit-wrapper input{
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    border:0px solid;
+    background-color:#0e4258;
+    padding:5px;
+    cursor: pointer;
+}

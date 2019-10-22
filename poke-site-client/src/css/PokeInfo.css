@@ -1,0 +1,16 @@
+#poke-info img{
+    margin:0 auto;
+    display: block;
+    width:200px;
+    height:200px;
+}
+
+#poke-info p{
+    margin-left:20px;
+}
+
+.info-title{
+    font-weight: bold;
+    color:#0e4258;
+    margin-right:10px;
+}
