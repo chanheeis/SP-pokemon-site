@@ -1,7 +1,41 @@
-# `./package.json`
+# `./poke-site-client/package.json`
 
 ### line:18
 Node.js Server와의 HTTP 통신을 위해 Proxy를 설정함
+
+# `./poke-site-client/public/index.html`
+
+### line:10
+Google Web Font 사용을 위한 링크
+
+# `./poke-site-client/src/actions/index.js`
+redux 적용을 위한 action을 정의, page data를 조작하는 4개의 action과 성격 테스트 결과 토글, 포켓몬 이름 검색을 위한 action이 정의되어 있음
+
+# `./poke-site-client/src/Components/LoadingPage.js`
+Database요청에 대한 응답 대기 시 렌더될 페이지
+
+# `./poke-site-client/src/Components/PageButton.js`
+페이지 버튼이 정의된 컴포넌트
+
+### line:8
+Redux를 통해 현재 페이지와, 페이지를 변화 시키는 함수를 전달받음
+
+### line:9-21
+currentPage와 부모 컴포넌트로 전달받은 pageNum이 같다면 CSS스타일이 변경될 수 있도록 조건문을 정의
+
+# `./poke-site-client/src/Components/PageList.js`
+
+### line:12
+Redux로부터 currentPage와 maxPage를 전달받음
+
+### line:18-24
+currentPage가 변경되면 수행될 로직
+
+### line:39-53
+현재 페이지를 기준으로 앞의 세 정수, 뒤로 세 정수를 배열로 정의
+
+### line:56-59
+페이지 번호 배열 중 최대 페이지를 넘어가거나, 0이하인 요소를 제외시킴
 
 # `./poke-site-server/api/api.util.js`
 
