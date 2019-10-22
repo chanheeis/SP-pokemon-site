@@ -50,8 +50,7 @@ class PokeInfo extends Component {
                     <img
                         src={pokeInfo[0].poke_image}
                         alt={pokeName}
-                    />
-                    
+                    />           
                     <p>
                         <span className="info-title">&#8226; 이름 : </span>
                         <span id="poke-info-name">{pokeName}</span></p>
@@ -82,6 +81,7 @@ class PokeInfo extends Component {
         } 
     }
 }
+
 const mapStateToProps=(state)=>{
     return{
         pokeName:state.currentPokeName

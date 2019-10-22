@@ -1,20 +1,20 @@
-# `./poke-site-client/package.json`
+## `./poke-site-client/package.json`
 
 ### line:18
 Node.js Server와의 HTTP 통신을 위해 Proxy를 설정함
 
-# `./poke-site-client/public/index.html`
+## `./poke-site-client/public/index.html`
 
 ### line:10
 Google Web Font 사용을 위한 링크
 
-# `./poke-site-client/src/actions/index.js`
+## `./poke-site-client/src/actions/index.js`
 redux 적용을 위한 action을 정의, page data를 조작하는 4개의 action과 성격 테스트 결과 토글, 포켓몬 이름 검색을 위한 action이 정의되어 있음
 
-# `./poke-site-client/src/Components/LoadingPage.js`
+## `./poke-site-client/src/Components/LoadingPage.js`
 Database요청에 대한 응답 대기 시 렌더될 페이지
 
-# `./poke-site-client/src/Components/PageButton.js`
+## `./poke-site-client/src/Components/PageButton.js`
 페이지 버튼이 정의된 컴포넌트
 
 ### line:8
@@ -23,7 +23,7 @@ Redux를 통해 현재 페이지와, 페이지를 변화 시키는 함수를 전
 ### line:9-21
 currentPage와 부모 컴포넌트로 전달받은 pageNum이 같다면 CSS스타일이 변경될 수 있도록 조건문을 정의
 
-# `./poke-site-client/src/Components/PageList.js`
+## `./poke-site-client/src/Components/PageList.js`
 
 ### line:12
 Redux로부터 currentPage와 maxPage를 전달받음
@@ -37,12 +37,15 @@ currentPage가 변경되면 수행될 로직
 ### line:56-59
 페이지 번호 배열 중 최대 페이지를 넘어가거나, 0이하인 요소를 제외시킴
 
-# `./poke-site-server/api/api.util.js`
+## `./poke-site-client/src/Components/PageList.js`
+
+
+## `./poke-site-server/api/api.util.js`
 
 ### line:4-10
 Error 메시지를 출력하는 fetch 함수를 정의하였음
 
-# `./poke-site-server/api/index.js`
+## `./poke-site-server/api/index.js`
 API 요청을 통해 807종에 달하는 포켓몬 정보와 타입, 서식지 정보를 저장하기 위한 라우터
 
 ### line:18-32
@@ -81,10 +84,10 @@ responseError가 존재하지 않는 pokeIdList를 인자로 전달받아 타입
 ### line:192
 모든 작업이 완료되면 홈페이지로 redirect함
 
-# `./poke-site-server/class/Database.js`
+## `./poke-site-server/class/Database.js`
 Node.js 서버에서 database connection을 Promise로 처리하기 위해 정의한 클래스
 
-# `./poke-site-server/class/query.js`
+## `./poke-site-server/class/query.js`
 성격 테스트를 통해 비슷한 유형의 포켓몬을 도출하기 위한 query 작성
 
 ### line:1-26
@@ -93,7 +96,7 @@ Node.js 서버에서 database connection을 Promise로 처리하기 위해 정�
 ### line:28-44
 서식지 정보가 존재하지 않는 포켓몬도 있기 때문에, 2^7가지의 경우의 수에 매칭되지 않는 경우도 있음, 그 경우는 Type에 해당하는 2^4가지의 경우의 수로만 판단
 
-# `./poke-site-server/user/user.util.js`
+## `./poke-site-server/user/user.util.js`
 user폴더는 Front-end와의 HTTP 통신을 위한 로직이 정의되어 있음
 
 ### line:5-15
@@ -108,7 +111,7 @@ JOIN문을 활용하여 포켓몬의 서식지와 타입 정보를 가져오는 
 ### line:50-62
 포켓몬의 이름을 통해 정보를 가져오는 쿼리
 
-# `./poke-site-server/user/index.js`
+## `./poke-site-server/user/index.js`
 
 ### line:12
 Page에 따른 포켓몬의 정보를 응답하기 위한 라우터
@@ -134,7 +137,7 @@ Client로부터 전달받은 7개의 Boolean값을 통해 DB요청을 하기 위
 ### line:63-66
 2^7개의 경우의 수 중 매칭되는 정보가 없다면 Type에 해당하는 2^4개의 경우의 수만을 고려하여 탐색
 
-# `./poke-site-server/util/index.js`
+## `./poke-site-server/util/index.js`
 공통 유틸을 정의한 파일
 
 ### line:1-7
