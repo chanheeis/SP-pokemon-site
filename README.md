@@ -47,4 +47,33 @@ responseError가 존재하지 않는 pokeIdList를 인자로 전달받아 타입
 ### line:192
 모든 작업이 완료되면 홈페이지로 redirect함
 
+# ./poke-site-server/class/Database.js
+Node.js 서버에서 database connection을 Promise로 처리하기 위해 정의한 클래스
+
+# ./poke-site-server/class/query.js
+성격 테스트를 통해 비슷한 유형의 포켓몬을 도출하기 위한 query 작성
+
+### line:1-26
+7가지의 Boolean 타입 변수를 전달받아, Boolean값에 매칭되는 서식지와 타입을 Habitat,Type테이블에서 각각 가져오고, poke_info 테이블과 Habitat, Type테이블을 각각 연결하는 poke_habitat, poke_type에서 포켓몬 도감 번호를 가져옴, 최종적으로 해당하는 도감번호의 포켓몬 정보를 가져옴
+
+### line:28-44
+서식지 정보가 존재하지 않는 포켓몬도 있기 때문에, 2^7가지의 경우의 수에 매칭되지 않는 경우도 있음, 그 경우는 Type에 해당하는 2^4가지의 경우의 수로만 판단
+
+# ./poke-site-server/user/user.util.js
+user폴더는 Front-end와의 HTTP 통신을 위한 로직이 정의되어 있음
+
+### line:5-15
+param으로 전달되는 값이 양의 정수인지, 최대 페이지 수보다 큰지를 판단하여 boolean 값으로 return
+
+### line:17-27
+JOIN문을 활용하여 포켓몬의 서식지와 타입 정보를 가져오는 쿼리, WHERE 문법에서 도감 번호를 기준으로 OFFSET, LIMIT을 정의하였지만, OFFSET과 LIMIT문법을 활용한 형태로도 작성 가능
+
+### line:35-48
+포켓몬 이름 검색 시 활용하는 함수로, 해당하는 이름의 포켓몬이 DB에 존재하는 지 판단하여 boolean값을 return
+
+### line:50-62
+포켓몬의 이름을 통해 정보를 가져오는 쿼리
+
+# `./poke-site-server/user/index.js`
+
 
